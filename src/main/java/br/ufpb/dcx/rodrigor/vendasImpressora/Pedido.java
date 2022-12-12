@@ -31,7 +31,7 @@ public class Pedido {
     public BigDecimal getTotalPedido(){
         BigDecimal total = new BigDecimal(0);
         for(ItemPedido item: itens.values()){
-            total.add(item.getTotalItem());
+            total = total.add(item.getTotalItem());
         }
         return total;
     }
