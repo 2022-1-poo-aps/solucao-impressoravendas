@@ -9,8 +9,8 @@ public class ItemPedido {
     private int quantidade;
 
     public ItemPedido(Produto produto, int quantidade){
-        this.produto = produto;
-        this.quantidade = quantidade;
+        this.setProduto(produto);
+        this.setQuantidade(quantidade);
     }
 
 
@@ -27,6 +27,9 @@ public class ItemPedido {
     }
 
     public void setProduto(Produto produto) {
+        if(produto == null) {
+            throw new IllegalArgumentException("produto não pode ser null!");
+        }
         this.produto = produto;
     }
 
@@ -35,6 +38,9 @@ public class ItemPedido {
     }
 
     public void setQuantidade(int quantidade) {
+        if(quantidade <= 0 ) {
+            throw new IllegalArgumentException("quantidade invalida!");
+        }
         this.quantidade = quantidade;
     }
 

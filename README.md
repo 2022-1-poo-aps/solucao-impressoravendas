@@ -4,6 +4,8 @@
 
 **Professor:** [Rodrigo Rebouças de Almeida](http://rodrigor.dcx.ufpb.br)
 
+# RESPOSTA do professor
+
 # Controle de Vendas e Impressoras
 
 O diagrama abaixo representa algumas entidades de um sistema de controle de vendas
